@@ -55,13 +55,14 @@ h6 {
   --color-bg: #171422;
   --color-card: rgb(255, 255, 255);
   --color-text: rgb(255, 255, 255);
+  --color-button: rgba(158, 11, 55, 0.7);
 }
 
 body {
   width: 100%;
   min-height: 100svh;
   font-family: 'Gotham Pro', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -75,8 +76,8 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1460px;
-  padding: 0 20px;
+  max-width: 1440px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -127,8 +128,24 @@ div {
   justify-content: space-between;
 }
 
+.header__menu-item::after {
+  width: 0;
+  height: 1.7px;
+  content: "";
+  display: block;
+  background: var(--color-text);
+  transition: width 0.7s;
+}
+
+.header__menu-item:hover::after {
+  width: 100%;
+}
+
 .header__menu-link {
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text);
+  cursor: pointer;
 }
 
 .header__menu-link-style {
@@ -161,11 +178,24 @@ div {
 }
 
 .header__button-registration {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 500;
-  background-color: rgba(158, 11, 55, 0.7);
+  background-color: var(--color-button);
   border-radius: 40px;
   padding: 12px 22px;
+}
+
+.btn-hover::after {
+  width: 0;
+  height: 1px;
+  content: "";
+  display: block;
+  background: var(--color-text);
+  transition: width 0.7s;
+}
+
+.btn-hover:hover::after {
+  width: 100%;
 }
 
 /* section banner ****************************** */
@@ -182,7 +212,7 @@ div {
 }
 
 .banner__title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -252,7 +282,7 @@ div {
 
 .info__box-top-text {
   width: 100%;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
   line-height: 140%;
   padding: 40px 40px 50px;
@@ -269,13 +299,13 @@ div {
 
 .info__box-number {
   display: table;
-  font-size: 183px;
+  font-size: 11.4375rem;
   font-weight: 700;
   background: -webkit-linear-gradient(180deg, #8a2645 0%, #291725 67%, #171422 99%);
   background: linear-gradient(180deg, #8a2645 0%, #291725 67%, #171422 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #8a2645;
+  color: rgb(138, 38, 69);
 }
 
 .info__box-number-one {
@@ -287,7 +317,7 @@ div {
 }
 
 .info__box-text {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 40px;
@@ -309,7 +339,7 @@ div {
 
 .info__box-card {
   min-height: 62px;
-  background-color: #fff;
+  background-color: var(--color-card);
   border-radius: 12px;
   align-content: center;
 }
@@ -344,14 +374,14 @@ div {
 }
 
 .info__box-text-style {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: right;
   margin: 0;
 }
 
 /* block paragraph ****************************** */
 .info__paragraph {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 20px;
@@ -420,7 +450,7 @@ div {
 /* block adobe card ****************************** */
 .info__adobe {
   width: 100%;
-  height: 600px;
+  margin-bottom: 80px;
 }
 
 .info__adobe-figure {
@@ -560,7 +590,7 @@ div {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid var(--color-text);
   border-radius: 23.91px;
   padding: 5px 0px 5px 14px;
   margin-inline: auto;
@@ -569,14 +599,14 @@ div {
 
 .about__btn-text {
   font-family: 'Gotham Pro';
-  font-size: 9px;
+  font-size: 0.5681rem;
   font-weight: 700;
   line-height: 140%;
   text-transform: uppercase;
 }
 
 .about__btn-text span {
-  font-size: 13.39px;
+  font-size: 0.8369rem;
 }
 
 .about__btn-circle {
