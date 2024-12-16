@@ -187,7 +187,7 @@ div {
 
 .btn-hover::after {
   width: 0;
-  height: 1px;
+  height: 1.7px;
   content: "";
   display: block;
   background: var(--color-text);
