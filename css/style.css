@@ -603,6 +603,10 @@ div {
   font-weight: 700;
   line-height: 140%;
   text-transform: uppercase;
+
+  &:hover {
+    color: red;
+  }
 }
 
 .about__btn-text span {
