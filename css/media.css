@@ -1,8 +1,35 @@
-@media (max-width: 1440px) {}
+@media (max-width: 1600px) {
+  .banner__image-left {
+    background-image: url(../images/banner-left-1600.png);
+  }
+}
 
-@media (max-width: 1024px) {}
+@media (max-width: 1440px) {
+  .banner__image-left {
+    background-image: url(../images/banner-left-1440.png);
+  }
+}
 
-@media (max-width: 768px) {}
+@media (max-width: 1024px) {
+  .banner__image-left {
+    background-image: url(../images/banner-left-1024.png);
+  }
+
+  .about {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner__image-left {
+    display: none;
+  }
+
+  .info__box-greed {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
 
 @media (max-width: 480px) {}
 
