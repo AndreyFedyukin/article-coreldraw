@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статья о CorelDRAW</title>
+
+  <!-- подключаем файлы css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+  <!-- делаем обертку для body -->
+  <div class="body__wrapper">
+    <!-- создаем header -->
+    <header class="header">
+      <div class="container">
+
+        <div class="header__wrapper">
+          <!-- создаем бургер для меню -->
+          <button class="header__burger burger" id="burger" aria-label="Burger menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- создаем меню -->
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link header__menu-link-style arrow">Направления</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Портфолио</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__button">
+            <button type="button" class="btn header__button-enter js-button-enter">Войти</button>
+            <button type="button" class="btn header__button-registration js-button-registration">Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- создаем основной контент -->
+    <main class="main">
+
+      <!-- section banner ****************************** -->
+      <section class="banner">
+        <div class="container">
+          <div class="banner__wrapper">
+            <div class="banner__image-left"></div>
+            <div class="banner__image-right"></div>
+            <h1 class="banner__title">Почему мы не используем<br><span class="banner__title-style"
+                lang="en">coreldraw</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- section content ****************************** -->
+      <section class="content">
+        <div class="container">
+          <div class="content__wrapper">
+
+            <div class="info">
+              <div class="info__box-top">
+                <p class="info__box-top-text">
+                  В мире дизайна мы сделали выбор в пользу Adobe, оставив за бортом формат CorelDraw.<br>Давайте
+                  разберем,
+                  почему именно Adobe стал нашим надежным союзником в творчестве.
+                </p>
+              </div>
+
+              <!-- block stock ****************************** -->
+              <div class="info__box-stock">
+                <div class="info__box-number info__box-number-one">1</div>
+                <div class="info__box-info">
+                  <p class="info__box-text">
+                    Adobe - это компания, представляющая широкий спектр продуктов, среди которых вы, вероятно, знакомы
+                    с
+                    основными:
+                  </p>
+
+                  <div class="info__box-product">
+                    <div class="info__box-greed">
+                      <div class="info__box-card">
+                        <img src="./images/adobe-1.png" class="info__box-card-img card-1" alt="Image Adobe">
+                      </div>
+                      <div class="info__box-card">
+                        <img src="./images/adobe-2.png" class="info__box-card-img card-2" alt="Image Adobe">
+                      </div>
+                      <div class="info__box-card">
+                        <img src="./images/adobe-3.png" class="info__box-card-img card-3" alt="Image Adobe">
+                      </div>
+                      <div class="info__box-card">
+                        <img src="./images/adobe-4.png" class="info__box-card-img card-4" alt="Image Adobe">
+                      </div>
+                      <div class="info__box-card">
+                        <img src="./images/adobe-5.png" class="info__box-card-img card-5" alt="Image Adobe">
+                      </div>
+                      <div class="info__box-card">
+                        <img src="./images/adobe-6.png" class="info__box-card-img card-6" alt="Image Adobe">
+                      </div>
+                    </div>
+
+                    <p class="info__box-text info__box-text-style">
+                      а также более 90 других продуктов
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- block paragraph ****************************** -->
+              <p class="info__paragraph">
+                Более тысячи специалистов по всему миру активно участвуют в разработке и обеспечивают высокое качество
+                продуктов и их разнообразные возможности.
+              </p>
+              <p class="info__paragraph">
+                В то время как CorelDraw ограничивается только CorelDraw.
+              </p>
+
+              <!-- box information-2 ****************************** -->
+              <div class="info__box-information">
+                <div class="info__box-number info__box-number-two">2</div>
+                <p class="info__paragraph info__paragraph-box-two">
+                  Поддержка CorelDraw практически отсутствует в Европе и США, поскольку более 98% типографий в этих
+                  регионах не используют данный формат.
+                </p>
+              </div>
+
+              <!-- box information-3 ****************************** -->
+              <div class="info__box-information info__box-information-three">
+                <div class="info__box-number info__box-number-three">3</div>
+                <p class="info__paragraph info__paragraph-box-three">
+                  Главный недостаток CorelDraw заключается в преобразовании документа во внутренний формат bitmap. Это
+                  особенно заметно при обработке растровых изображений, где могут возникнуть различные артефакты,
+                  такие
+                  как неожиданные грани, изменение цветов или полная инверсия изображения.
+                </p>
+              </div>
+
+              <!-- block card error ****************************** -->
+              <div class="info__block-card">
+                <div class="info__card-left">
+                  <img src="./images/card-error-1.png" alt="">
+                </div>
+                <div class="info__card-right">
+                  <img src="./images/card-error-2.png" alt="">
+                </div>
+              </div>
+
+              <!-- block paragraph ****************************** -->
+              <p class="info__paragraph">
+                В отличие от этого, Illustrator лишен подобных неожиданностей и обладает полной совместимостью с
+                форматами
+                PDF и EPS, необходимыми для полиграфии. Важно отметить, что, несмотря на возможность сохранения файлов
+                в
+                формате PDF, CorelDraw плохо распознает PDF файлы, что может привести к потере некоторых элементов
+                макета.
+                Поэтому при подготовке макета для офсетной полиграфии Illustrator остается оптимальным выбором.
+              </p>
+
+              <!-- block adobe card ****************************** -->
+              <div class="info__adobe">
+                <div class="info__adobe-figure">
+                  <img src="./images/figure.png" alt="">
+                </div>
+                <div class="info__adobe-know">
+                  <div class="info__adobe-wrap">
+                    <div class="info__adobe-card">
+                      <img src="./images/know-1.png" class="info__adobe-card-know" alt="">
+                    </div>
+
+                    <div class="info__adobe-card card-ball">
+                      <img src="./images/ball-1.png" class="info__adobe-img-ball" alt="">
+                      <img src="./images/know-2.png" class="info__adobe-card-know" alt="">
+                    </div>
+
+                    <div class="info__adobe-card">
+                      <img src="./images/know-3.png" class="info__adobe-card-know" alt="">
+                    </div>
+                  </div>
+
+                  <div class="info__adobe-card card-ball">
+                    <img src="./images/ball-2.png" class="info__adobe-img-ball" alt="">
+                    <img src="./images/know-4.png" class="info__adobe-card-know" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <!-- box information-4 ****************************** -->
+              <div class="info__box-information info__box-information-four">
+                <div class="info__box-number info__box-number-four">4</div>
+                <p class="info__paragraph info__paragraph-box-four">
+                  Современная лицензия CorelDraw может оцениваться в 600 долларов в год на одного пользователя, что
+                  может быть финансово недоступным для многих типографий. Из-за этого они вынуждены использовать
+                  устаревшие версии программы, что может привести к искаженному отображению контента.
+                </p>
+              </div>
+
+              <!-- box information-5 ****************************** -->
+              <div class="info__box-information info__box-information-five">
+                <div class="info__box-number info__box-number-five">5</div>
+                <p class="info__paragraph info__paragraph-box-five">
+                  Обучение наших дизайнеров работе в CorelDraw требовало бы значительного времени. Учитывая, что это
+                  формат с тенденцией к упадку, вкладывание человеческого капитала в него становится неоправданно.
+                </p>
+              </div>
+            </div>
+
+            <!-- box about ****************************** -->
+            <div class="about">
+              <div class="about__card about__card-1">
+                <button type="button" class="about__btn">
+                  <p class="about__btn-text">почему мы не используем<br><span>CorelDraw</span></p>
+                  <span class="about__btn-circle">
+                    <img src="./images/arrow.png" alt="">
+                  </span>
+                </button>
+              </div>
+
+              <div class="about__card about__card-2">
+                <button type="button" class="about__btn">
+                  <p class="about__btn-text">почему мы не используем<br><span>CorelDraw</span></p>
+                  <span class="about__btn-circle">
+                    <img src="./images/arrow.png" alt="">
+                  </span>
+                </button>
+              </div>
+
+              <div class="about__card about__card-3">
+                <button type="button" class="about__btn">
+                  <p class="about__btn-text">почему мы не используем<br><span>CorelDraw</span></p>
+                  <span class="about__btn-circle">
+                    <img src="./images/arrow.png" alt="">
+                  </span>
+                </button>
+              </div>
+
+              <div class="about__card about__card-4">
+                <button type="button" class="about__btn">
+                  <p class="about__btn-text">почему мы не используем<br><span>CorelDraw</span></p>
+                  <span class="about__btn-circle">
+                    <img src="./images/arrow.png" alt="">
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- block paragraph bottom ****************************** -->
+        <div class="container">
+          <p class="info__paragraph info__paragraph-bottom">
+            ​​Используя среду Adobe, мы вкладываемся в инновации, качество и признание в мировом масштабе.
+            Присоединяйтесь к нам в этом увлекательном путешествии в мир творчества, где каждый проект становится
+            настоящим произведением искусства.
+          </p>
+        </div>
+  </div>
+  </section>
+
+  <!-- section scroller ****************************** -->
+  <section class="scroller" data-speed="fast">
+    <div class="images-list scroller__left">
+      <img src="./images/slide-1.png" alt="" class="scroller__img">
+      <img src="./images/slide-2.png" alt="" class="scroller__img">
+      <img src="./images/slide-3.png" alt="" class="scroller__img">
+      <img src="./images/slide-4.png" alt="" class="scroller__img">
+      <img src="./images/slide-5.png" alt="" class="scroller__img">
+      <img src="./images/slide-6.png" alt="" class="scroller__img">
+      <img src="./images/slide-7.png" alt="" class="scroller__img">
+      <img src="./images/slide-8.png" alt="" class="scroller__img">
+      <img src="./images/slide-9.png" alt="" class="scroller__img">
+      <img src="./images/slide-10.png" alt="" class="scroller__img">
+    </div>
+
+    <div class="images-list scroller__right">
+      <img src="./images/slide-1.png" alt="" class="scroller__img">
+      <img src="./images/slide-2.png" alt="" class="scroller__img">
+      <img src="./images/slide-3.png" alt="" class="scroller__img">
+      <img src="./images/slide-4.png" alt="" class="scroller__img">
+      <img src="./images/slide-5.png" alt="" class="scroller__img">
+      <img src="./images/slide-6.png" alt="" class="scroller__img">
+      <img src="./images/slide-7.png" alt="" class="scroller__img">
+      <img src="./images/slide-8.png" alt="" class="scroller__img">
+      <img src="./images/slide-9.png" alt="" class="scroller__img">
+      <img src="./images/slide-10.png" alt="" class="scroller__img">
+    </div>
+  </section>
+  </main>
+
+  <!-- подключение библиотеки scrollreveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- подключаем файлы js -->
+  <script src="./js/main.js"></script>
+  </div>
+</body>
+
+</html>
