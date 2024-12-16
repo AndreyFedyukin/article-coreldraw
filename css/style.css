@@ -81,10 +81,6 @@ body {
   margin: 0 auto;
 }
 
-div {
-  outline: 1px solid red;
-}
-
 /* heder ****************************** */
 .header {
   width: 100%;
